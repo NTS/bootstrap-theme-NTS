@@ -1,7 +1,7 @@
 /*!
- * Your Theme Name v0.1.0
+ * NTS.css v1.1.0
  *
- * Copyright 2013 Your Name
+ * Copyright 2013 Max F. Albrecht
  * Licensed under the Apache License v2.0
  * http://www.apache.org/licenses/LICENSE-2.0
  *
@@ -11,4 +11,111 @@
 
 @import "bootstrap.less";
 
-// Add CSS Customizations to your theme here.
+@FontAwesomePath:    "../font";
+
+/*
+
+      4  N T S 
+
+*/
+
+/* Fonts  <http://www.google.com/fonts/#UsePlace:use/Collection:Droid+Sans:400,700|Droid+Sans+Mono|Droid+Serif:400,700,400italic,700italic> */
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono|Droid+Serif:400,700,400italic,700italic);
+
+/* COLORS */
+@NTS: hsl(180, 33%, 30%);
+
+/* base */
+body {
+  margin: auto;
+/*  font-style: normal;*/
+/*  font-weight: 400;*/
+/*  letter-spacing: 0.05em;*/
+  word-spacing: 0em;
+/*  line-height: 1.3;*/
+}
+
+small,
+nav,
+.navbar,
+.nav,
+.alert strong, .alert b,
+.btn {
+  font-family: @font-family-sans-serif;
+}
+
+.btn {
+  font-weight: 700;
+}
+
+ul, li { 
+ width: auto; 
+ margin: 0px; 
+ list-style-type: none; 
+ padding: 0;
+}
+
+ul { 
+  margin-bottom: 1em; 
+  text-align:center;
+}
+
+/*:link, :visited { 
+  color: @NTS; 
+  text-decoration: none; 
+}
+*/
+
+.page-header {
+  border-bottom-width: 0.2em;
+}
+
+hr {
+  border-top-width: 0.2em;
+  border-top-color: mix(@NTS, @body-bg, 20%);
+}
+
+
+/* site title */
+h1 { 
+  margin-bottom: 1em; 
+  font-weight: 800;
+}
+h1 span { 
+  font-size: 0.8em; 
+  font-style: italic; 
+}
+
+/* sections */
+h2, h3 {
+  p { 
+    font-size: 2em; 
+    margin: 0; 
+  }
+  [class^="icon-"] {
+    font-size: 0.75em;
+  }
+}
+
+h3 { font-size: 1.25em; }
+h3 + ul { font-size: 0.75em; }
+
+
+
+/* overrides */
+@media screen and (max-device-width: 480px) {
+  html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; 
+  font-size: 1em!important;
+  }
+
+}
+
+/* ---------------------------- */
+
+/* fixes for removed components */
+.panel-heading {
+  .h3;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+

@@ -1,6 +1,6 @@
 {
-  "name": "bootstrap-theme-themestrap",
-  "version": "0.3.0",
+  "name": "bootstrap-theme-NTS",
+  "version": "1.0.0",
   "main": "dist/bootstrap.css",
   "ignore": [
     "**/.*",
@@ -10,6 +10,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap":"3.0.0" 
+    "bootstrap": "3.0.x",
+    "font-awesome": "3.2.x"
   }
 }
