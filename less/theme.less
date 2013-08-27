@@ -101,6 +101,13 @@ h3 { font-size: 1.25em; }
 h3 + ul { font-size: 0.75em; }
 
 
+/* icons */
+
+/* a <b> inside an icon is only for screen readers */
+[class^="icon-"] b {
+  .sr-only;
+}
+
 
 /* overrides */
 @media screen and (max-device-width: 480px) {
